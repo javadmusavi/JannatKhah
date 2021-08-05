@@ -1,7 +1,7 @@
 import time
 from sys import argv
 import instaloader
-from instaloader import Profile, Post
+from instaloader import Profile
 
 instance = instaloader.Instaloader()
 
@@ -10,9 +10,7 @@ if __name__ == '__main__':
     profile = Profile.from_username(instance.context, username="jannatkhah.ir")
 
     for highlight in instance.get_highlights(user=profile):
-        # highlight is a Highlight object
         for item in highlight.get_items():
-            # item is a StoryItem object
             flag = 0
             while flag == 0:
                 try:
