@@ -13,9 +13,5 @@ if __name__ == '__main__':
         for item in highlight.get_items():
             flag = 0
             while flag == 0:
-                try:
                     instance.download_storyitem(item, '{}/{}'.format(highlight.owner_username, highlight.title))
                     flag = 1
-                except:
-                    time.sleep(5)
-                    continue
