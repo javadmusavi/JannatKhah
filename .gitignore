@@ -1,0 +1,4 @@
+*.json.xz
+/main.py
+/.idea/
+/venv/
