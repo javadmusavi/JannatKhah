@@ -1,3 +1,4 @@
 *.json.xz
 /.idea/
 /venv/
+/test.py
