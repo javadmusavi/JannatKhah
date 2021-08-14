@@ -15,3 +15,4 @@ if __name__ == '__main__':
             while flag == 0:
                     instance.download_storyitem(item, '{}/{}'.format(highlight.owner_username, highlight.title))
                     flag = 1
+
